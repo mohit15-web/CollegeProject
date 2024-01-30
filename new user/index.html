@@ -16,7 +16,8 @@
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
-  <title>Login</title>
+
+  <title>Sign Up</title>
 </head>
 
 <body>
@@ -33,20 +34,31 @@
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
-                <h3>Teacher Login In <strong></strong></h3>
-                <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+                <h3>Sign Up<strong></strong></h3>
               </div>
-              <form id="form">
+              <form action="#" method="post">
                 <div class="form-group first">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email">
-                  <p class="red email none">Enter valid email</p>
+                  <label for="username">Name</label>
+                  <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group first">
+                  <label for="username">Last Name</label>
+                  <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group first">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username">
+
                 </div>
                 <div class="form-group last mb-4">
                   <label for="password">Password</label>
                   <input type="password" class="form-control" id="password">
-                  <p class="pass red none">Enter valid password</p>
                 </div>
+                <div class="form-group last mb-4">
+                  <label for="password">Confirm Password</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+
                 <div class="d-flex mb-5 align-items-center">
                   <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
                     <input type="checkbox" checked="checked" />
@@ -54,17 +66,14 @@
                   </label>
                   <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
                 </div>
-              </form>
-              <!-- <a href="./dashboard.html" style="text-decoration: none;"> -->
-              <button class="btn text-white btn-block btn-primary" id="btn">Submit</button>
-              <!-- </a> -->
-              
-              <label class="control control--checkbox mb-0"><span class="caption">
-                New User?<a href="./new user/index.html"> Create account</a></span>
 
+                <input type="submit" value="Log In" class="btn text-white btn-block btn-primary">
+              </form>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
   </div>
@@ -74,7 +83,6 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="script.js"></script>
 </body>
 
 </html>
