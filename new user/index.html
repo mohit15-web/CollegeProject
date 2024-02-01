@@ -18,11 +18,31 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Sign Up</title>
+
+  <style>
+    .form-group select {
+      width: 30%;
+      padding: 2px 0;
+      cursor: pointer;
+      border-radius: 10px;
+      background: transparent;
+      border: 1px solid #4AD489;
+      color: #727070;
+    }
+
+    select:hover {
+      background-color: white;
+    }
+
+    select option {
+      padding: 10px;
+      font-size: 16px;
+      color: #727070;
+    }
+  </style>
 </head>
 
 <body>
-
-
 
   <div class="content">
     <div class="container">
@@ -37,23 +57,21 @@
                 <h3><strong>Create Teacher Account</strong></h3>
               </div>
               <form action="#" method="post">
-                <div class="form-group first">
+                <div class="form-group first" style="display: flex;">
                   <label for="academicYear">Select Academic Year:</label><br><br>
-                  <select class="form-select" aria-label="Default select example">
-                      <option value="2022-2023">2022-2023</option>
-                      <option value="2023-2024">2023-2024</option>
-                      <option value="2024-2025">2024-2025</option>
-                      <!-- Add more academic years as needed -->
+                  <select class="form-select" aria-label="Default select example" style="margin-left: 8rem;">
+                    <option value="2022-2023">2022-2023</option>
+                    <option value="2023-2024">2023-2024</option>
+                    <option value="2024-2025">2024-2025</option>
                   </select>
                 </div>
-                <div class="form-group first">
+                <div class="form-group first " style="display: flex; justify-content: start;">
                   <label for="academicYear">Title:</label><br><br>
-                  <select class="form-select" aria-label="Default select example">
-                      <option value="2022-2023">Mr.</option>
-                      <option value="2023-2024">Mrs.</option>
-                      <option value="2024-2025">Dr.</option>
-                      <option value="2024-2025">Prof.</option>
-                      <!-- Add more academic years as needed -->
+                  <select class="form-select" aria-label="Default select example" style="margin-left: 2rem;  width: 14%;">
+                    <option value="2022-2023">Mr.</option>
+                    <option value="2023-2024">Mrs.</option>
+                    <option value="2024-2025">Dr.</option>
+                    <option value="2024-2025">Prof.</option>
                   </select>
                 </div>
                 <div class="form-group first">
