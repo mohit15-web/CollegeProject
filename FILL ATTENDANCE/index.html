@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <style>
-              select {
+            select {
                 width: 10%;
                 padding: 2px;
                 cursor: pointer;
@@ -31,10 +31,6 @@
             .form-group {
                 margin: 20px 0;
             }
-
-
-          
-
         </style>
     </head>
 
@@ -43,22 +39,22 @@
             <nav>
                 <ul>
                     <li><a href="#" class="logo">
-                            <img src="adamin.png">
+                            <img src="mohit.jpg">
                             <span class="nav-item">Adamin</span>
                         </a></li>
 
-                        <li><a href="./new user/index.html">
+                    <li><a href="./new user/index.html">
                             <i class="fas fa-menorah"></i>
                             <span class="nav-item">Add Teachers</span>
-                          </a></li>
-                          <li><a href="./FILL ATTENDANCE/index.html">
+                        </a></li>
+                    <li><a href="./FILL ATTENDANCE/index.html">
                             <i class="fas fa-comment"></i>
                             <span class="nav-item">Fill Attendance</span>
-                          </a></li>
-                          <li><a href="dashboard.html">
+                        </a></li>
+                    <li><a href="dashboard.html">
                             <i class="fas fa-database"></i>
                             <span class="nav-item">Report</span>
-                          </a></li>
+                        </a></li>
 
                     <li type="square"><a href="#" class="logout">
                             <i class="fas fa-sign-out-alt"></i>
@@ -71,9 +67,8 @@
             <section class="main">
                 <div class="main-top">
                     <h1>Fill Attendance</h1>
-                    <!-- <i class="fas fa-user-cog"></i> -->
                 </div>
-                <div class="form-group" style="display: flex;">
+                <div class="depart">
                     <label for="academicYear">Department:</label><br><br>
                     <select class="form-select" aria-label="Default select example" style="margin-left: 2rem;">
                         <option value="2022-2023">BCS</option>
@@ -83,6 +78,11 @@
                         <!-- Add more academic years as needed -->
                     </select>
                 </div>
+
+                <label class="date-label" for="dateInput">Select a date:</label>
+                <input type="date" id="dateInput">
+
+
                 <section class="attendance">
                     <div class="attendance-list">
                         <h1>Teachers List</h1>
@@ -98,29 +98,29 @@
                             <tbody>
                                 <tr>
                                     <td>Narayan bhasande</td>
-                                    <td>8:00AM</td>
-                                    <td>3:00PM</td>
+                                    <td><button class="timeButton">In</button></td>
+                                    <td><button class="timeButton">Out</button></td>
                                     <td><button>View</button></td>
                                 </tr>
                                 <tr class="active">
                                     <!-- <td>02</td> -->
                                     <td>mohit chaudary</td>
-                                    <td>9:00AM</td>
-                                    <td>4:00PM</td>
+                                    <td><button class="timeButton">In</button></td>
+                                    <td><button class="timeButton">Out</button></td>
                                     <td><button>View</button></td>
                                 </tr>
                                 <tr>
                                     <!-- <td>03</td> -->
                                     <td>abhay panchal</td>
-                                    <td>8:00AM</td>
-                                    <td>3:00PM</td>
+                                    <td><button class="timeButton">In</button></td>
+                                    <td><button class="timeButton">Out</button></td>
                                     <td><button>View</button></td>
                                 </tr>
                                 <tr>
                                     <!-- <td>04</td> -->
                                     <td>pratik buraspatte</td>
-                                    <td>8:00AM</td>
-                                    <td>3:00PM</td>
+                                    <td><button class="timeButton">In</button></td>
+                                    <td><button class="timeButton">Out</button></td>
                                     <td><button>View</button></td>
                                 </tr>
 
@@ -130,7 +130,9 @@
                 </section>
             </section>
         </div>
-        <script src="scrippt.js"></script>
+
+
+        <script src="script.js"></script>
     </body>
 
     </html>
