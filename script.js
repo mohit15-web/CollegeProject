@@ -23,20 +23,26 @@ document.getElementById("btn").addEventListener("click", (e) => {
 });
 
 function checkValidPassword(pass) {
-  let isSmall = false,
+  let isLong = false,
+    isSmall = false,
     isCap = false,
     isNum = false;
 
-  for (let i = "a"; i <= "z"; i++) {
-    if (pass.includes(i)) {
-      isSmall = true;
-      break;
-    }
+  console.log(pass);
+  if (pass.length > 7) {
+    isLong = true;
   }
 
   for (let i = "A"; i <= "Z"; i++) {
     if (pass.includes(i)) {
       isCap = true;
+      break;
+    }
+  }
+
+  for (let i = "a"; i <= "z"; i++) {
+    if (pass.includes(i)) {
+      isSmall = true;
       break;
     }
   }
@@ -48,5 +54,5 @@ function checkValidPassword(pass) {
     }
   }
 
-  return isCap && isNum && isSmall;
+  return isLong && isCap && isNum && isSmall;
 }

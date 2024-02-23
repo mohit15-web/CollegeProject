@@ -1,53 +1,20 @@
-document.getElementById("btn").addEventListener("click", (e) => {
-    e.preventDefault();
-    const email = document.getElementById("email");
-    let emailVal = email.value + "";
-    if (!emailVal.includes("@")) {
-      document.querySelector(".email").classList.remove("none");
-      return;
-    } else {
-      document.querySelector(".email").classList.add("none");
-    }
-  
-    const password = document.getElementById("password");
-    let passVal = password.value;
-  
-    if (!checkValidPassword(passVal)) {
-      document.querySelector(".pass").classList.remove("none");
-      return;
-    } else {
-      document.querySelector(".pass").classList.add("none");
-    }
-  
-    window.location.href = "dashboard.html";
-  });
-  
-  function checkValidPassword(pass) {
-    let isSmall = false,
-      isCap = false,
-      isNum = false;
-  
-    for (let i = "a"; i <= "z"; i++) {
-      if (pass.includes(i)) {
-        isSmall = true;
-        break;
-      }
-    }
-  
-    for (let i = "A"; i <= "Z"; i++) {
-      if (pass.includes(i)) {
-        isCap = true;
-        break;
-      }
-    }
-  
-    for (let i = "0"; i <= "9"; i++) {
-      if (pass.includes(i)) {
-        isNum = true;
-        break;
-      }
-    }
-  
-    return isCap && isNum && isSmall;
+document.getElementById("loginButton").addEventListener("click", function () {
+  var email = document.getElementById("emailInput").value;
+  var password = document.getElementById("passwordInput").value;
+  // Perform email validation
+  if (!email.includes("@")) {
+    alert("Please enter a valid email address");
+    return;
   }
-  
+  // Perform password validation
+  if (password.length < 8 || !/[!@#$%^&*()_+]/.test(password)) {
+    alert(
+      "Please enter a valid password (minimum 8 characters with at least one special character)"
+    );
+    return;
+  }
+  // If validation passes, redirect to index.html
+  window.location.href = "/FILL ATTENDANCE/index.html";
+});
+
+// window.location.href = '../FILL ATTENDANCE/index.html';
